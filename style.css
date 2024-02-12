@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding: 30px 10%;
+}
+.header__container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header__nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.header__container img{
+    border: dashed rgb(202, 202, 202) 2px;
+}
+.header__nav a{
+    color: rgb(54, 83, 107);
+font-family: Public Sans;
+font-size: 15px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+text-decoration: none;
+}
+.header__btn{
+    border-radius: 24px;
+box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+background: rgb(186, 66, 112);
+width: 173px;
+height: 48px;
+border: none;
+color: white;
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.header__title{
+    color: rgb(54, 83, 107);
+font-family: DM Serif Display;
+font-size: 72px;
+font-weight: 400;
+line-height: 72px;
+letter-spacing: -0.55px;
+text-align: left;
+width: 546px;
+height: 243px;
+}
+.header__container i{
+    display: none;
+}
+.section1{
+    background: rgb(27, 38, 47);
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+.section1__container{
+width: 405px;
+height: 192px;
+display: flex;
+gap: 40px;
+flex-direction: column;
+}
+.section1__container h1{
+    color: rgb(251, 252, 254);
+font-family: DM Serif Display;
+font-size: 48px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: -0.37px;
+text-align: left;
+}
+.section1__container p{
+    color: rgb(251, 252, 254);
+font-family: Public Sans;
+font-size: 15px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+}
+.section1__container button{
+width: 129px;
+padding: 20px;
+left: 24.81%;
+right: 24.81%;
+top: 16px;
+bottom: 14px;
+border-radius: 30px;
+color: white;
+border: white 1px solid;
+    background: rgb(27, 38, 47);
+}
+.section1__content{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 500px;
+    height: 100px;
+    margin-top: 50px;
+}
+@media (max-width:768px) {
+    .header__btn{
+        margin-left: 50px;
+    }
+    .header{
+        padding: 30px 40px;
+    }
+    .header__container img{
+        border: none;
+    }
+    .header__content{
+        flex-direction: column-reverse;
+    }
+    .header__content h1{
+        color: rgb(54, 83, 107);
+        font-family: DM Serif Display;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+        text-align: center;
+    }
+    .header__content img{
+        height: 400px;
+        width: 300px;
+    }
+    .section1{
+        height: 700px;
+        flex-direction: column-reverse;
+    }
+    .section1__container{
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .section1__container p{
+        text-align: center;
+    }
+}
+@media (max-width:376px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__container i{
+        display: flex;
+        margin-right: -30px;
+    }
+    .section1{
+        height: 670px;
+        width: 110%;
+    }
+    .header__title{
+        color: rgb(54, 83, 107);
+font-family: DM Serif Display;
+font-size: 32px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: -0.25px;
+text-align: center;
+width: 300px;
+height: 108px;
+margin-bottom: 100px;
+    }
+    .section1__content{
+        width: 340px;
+        margin-top: -30px;
+    }
+    .section1__container h1{
+        font-family: DM Serif Display;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+        text-align: center;
+    }
+    .section1__container{
+        margin-top: -60px;
+    }
+    .section1__container p{
+        font-size: 15px;
+        text-align: center;
+        width: 340px;
+    }
+    .header__content img{
+        height: 300px;
+        width: 200px;
+        display: flex;
+        margin-left: 50px;
+    }
+    .header__title{
+        margin-left: 30px;
+    }
+}
